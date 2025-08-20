@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udit Narayan - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f7fa;
+      color: #333;
+    }
+
+    /* Sidebar */
+    nav {
+      height: 100%;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      background-color: #2c3e50;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+    }
+
+    nav a {
+      padding: 12px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #f1f1f1;
+      display: block;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      background-color: #34495e;
+    }
+
+    /* Toggle Button */
+    .menu-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 25px;
+      background: #2c3e50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+
+    /* Page Content */
+    .content {
+      margin-left: 0;
+      padding: 20px;
+      transition: margin-left 0.3s;
+    }
+
+    header {
+      background:#ADD8E6;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    section {
+      margin: 20px 0;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2980b9;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 8px 0;
+    }
+
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background: #2c3e50;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      nav {
+        left: 0;
+      }
+      .content {
+        margin-left: 250px;
+      }
+      .menu-btn {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <nav id="sidebar">
+    <a href="#career">Career Objective</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#activities">Activities</a>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="content">
+    <header>
+      <h1>UDIT NARAYAN MAHANTA</h1>
+      <p>Email:<a href="mailto:unm.udit@gmail.com">unm.udit@gmail.com</a> | Phone: +91 8260090624</p>
+      <p><a href="https://www.linkedin.com/in/udit-narayan-35a89a319" target="_blank">LinkedIn</a></p>
+    </header>
+
+    <section id="career">
+      <h2>Career Objective</h2>
+      <p>Motivated and enthusiastic undergraduate student currently in 3rd year, seeking an internship opportunity to apply academic knowledge, enhance technical skills, and gain hands-on experience in a professional environment.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>• HTML (basics), CSS (basics), C (basics), Python (basics)</li>
+        <li>• MS Excel, Tableau (basics)</li>
+        <li>• Canva, Capcut</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>• Designed and developed a responsive personal webpage using HTML and CSS.<a href="file:///C:/Users/cirak/Downloads/Udit_webpage.html" target="_blank">Portflio</a></li>
+        <li>• Developed a basic calculator in C that performs arithmetic operations (addition, subtraction, multiplication, division).</li>
+      </ul>
+    </section>
+
+<section id="education">
+      <h2>Education</h2>
+      <p><b>BJB Autonomous College, Bhubaneswar</b><br>
+      B.Sc. in Bioinformatics | 3rd Year (2023–2026)<br>
+      SGPA: 7.00</p>
+ 
+      <p><b>Odisha Adarsha Vidyalaya, Oriya, Telkoi</b><br>
+      Centra Board of Secondary Education (2020–2022)<br>
+      54.00%</p>
+
+      <p><b>Sri Aurobindo Institute of Integral Education, Keonjhar</b><br>
+      Board of Secondary Education, Odisha (2019–2020)<br>
+      78.50%</p>
+
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements / Certifications</h2>
+      <ul>
+        <li>• Participated in Techfest at IIT BOMBAY 2024</li>
+        <li>• Participated in Cloud Community Day, Bhubaneswar 2025</li>
+        <li>• Deloitte Data Analytics Job Simulation (Forage, June 2025)</li>
+        <li>• Deloitte Cyber Job Simulation (Forage, June 2025)</li>
+        <li>• Deloitte Technology Job Simulation (Forage, June 2025)</li>
+      </ul>
+    </section>
+
+    <section id="activities">
+      <h2>Extra-Curricular Activities</h2>
+      <ul>
+        <li>• Member of College photography and videography club</li>
+        <li>• Running a YouTube channel: <a href="https://youtube.com/@uditnarayanvlogs?si=61-kDEpJdPbWjmiX" target="_blank">Udit Narayan Vlogs</a></li>
+        <li>• Volunteered in college events and seminars</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2025 Udit Narayan Mahanta | Portfolio Website</p>
+    </footer>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      let sidebar = document.getElementById("sidebar");
+      if (sidebar.style.left === "0px") {
+        sidebar.style.left = "-250px";
+      } else {
+        sidebar.style.left = "0px";
+      }
+    }
+  </script>
+</body>
+</html>
